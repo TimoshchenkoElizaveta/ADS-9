@@ -12,7 +12,7 @@ class BST {
         Node* right;
         Node* left;
 
-        Node(const T& data) : data(data), count(1), right(nullptr), left(nullptr) {}
+         Node(const T& data) : data(data), count(1), right(nullptr), left(nullptr) {}
     };
 
  private:

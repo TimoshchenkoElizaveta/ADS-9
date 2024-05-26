@@ -5,7 +5,7 @@
 
 template <typename T>
 class BST {
-public:
+ public:
     struct Node {
         T data;
         int count;
@@ -15,14 +15,14 @@ public:
         Node(const T& data) : data(data), count(1), right(nullptr), left(nullptr) {}
     };
 
-private:
+ private:
     Node* root;
 
     Node* addNode(Node* node, const T& data);
     int depthTree(Node* node);
     int searchNode(Node* node, const T& data);
 
-public:
+ public:
     BST() : root(nullptr) {}
     void add(const T& data);
     int depth();
